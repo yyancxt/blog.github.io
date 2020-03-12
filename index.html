@@ -235,7 +235,7 @@
 <p>​        给容器中导入组件？</p>
 <p>​        <strong>EnableAutoConfigurationImportSelector</strong>：导入哪些组件的选择器；</p>
 <p>​        将所有需要导入的组件以全类名的方式返回；这些组件就会被添加到容器中；</p>
-<p>​        会给容器中导入非常多的自动配置类（xxxAutoConfiguration）；就是给容器中导入这个场景需要的所有组件，并配置好这些组件；        <img src="/Users/lmy/Documents/blog/source/_posts/image/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180129224104.png" alt="搜狗截图20180129224104"></p>
+<p>​        会给容器中导入非常多的自动配置类（xxxAutoConfiguration）；就是给容器中导入这个场景需要的所有组件，并配置好这些组件；        <img src="%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180129224104.png" alt="搜狗截图20180129224104"></p>
 <p>有了自动配置类，免去了我们手动编写配置注入功能组件等的工作；</p>
 <p>​        SpringFactoriesLoader.loadFactoryNames(EnableAutoConfiguration.class,classLoader)；</p>
 <p>==Spring Boot在启动的时候从类路径下的META-INF/spring.factories中获取EnableAutoConfiguration指定的值，将这些值作为自动配置类导入到容器中，自动配置类就生效，帮我们进行自动配置工作；==以前我们需要自己配置的东西，自动配置类都帮我们；</p>
@@ -317,7 +317,7 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--导入配置文件处理器，配置文件进行绑定就会有提示--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-configuration-processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="1、properties配置文件在idea中默认utf-8可能会乱码"><a href="#1、properties配置文件在idea中默认utf-8可能会乱码" class="headerlink" title="1、properties配置文件在idea中默认utf-8可能会乱码"></a>1、properties配置文件在idea中默认utf-8可能会乱码</h4><p>调整</p>
-<p><img src="/Users/lmy/Documents/blog/source/_posts/image/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180130161620.png" alt="搜狗截图20180130161620"></p>
+<p><img src="%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180130161620.png" alt="搜狗截图20180130161620"></p>
 <h4 id="2、-Value获取值和-ConfigurationProperties获取值比较"><a href="#2、-Value获取值和-ConfigurationProperties获取值比较" class="headerlink" title="2、@Value获取值和@ConfigurationProperties获取值比较"></a>2、@Value获取值和@ConfigurationProperties获取值比较</h4><table>
 <thead>
 <tr>
